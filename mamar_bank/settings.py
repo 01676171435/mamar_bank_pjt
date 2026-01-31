@@ -23,9 +23,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-9m7m(c2egp@zl*hyfutcv44(6k8lj+p#pff@mgsoc1r6xak&i('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+ALLOWED_HOSTS = [
+    "mamar-bank-pjt.onrender.com",
+]
 
-ALLOWED_HOSTS = []
+CSRF_TRUSTED_ORIGINS = [
+    "https://mamar-bank-pjt.onrender.com",
+    "http://mamar-bank-pjt.onrender.com",
+]
+
+DEBUG = False
 
 
 # Application definition
